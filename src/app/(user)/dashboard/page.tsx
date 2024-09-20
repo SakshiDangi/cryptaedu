@@ -2,7 +2,7 @@ import { db } from "@/db";
 import { eq } from "drizzle-orm";
 import { quizzes } from "@/db/schema";
 import { auth } from "@/auth";
-import QuizzesTable, { Quizz } from "./quizesTable";
+import QuizzesTable, { Quizz } from "./quizzesTable";
 import getUserMetrics from "@/actions/getUserMetrics";
 import getHeatMapData from "@/actions/getHeatMapData";
 import MetricCard from "./metricCard";

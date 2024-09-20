@@ -2,7 +2,7 @@ import { db } from "@/db";
 
 import { quizzes } from "@/db/schema";
 import { eq } from 'drizzle-orm';
-import QuizzQuestions from "../QuizQuestions";
+import QuizzQuestions from "../QuizzQuestions";
 
 const page = async ({ params }: {
   params: {
