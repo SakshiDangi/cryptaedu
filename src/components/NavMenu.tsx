@@ -40,15 +40,21 @@ import {
         <DropdownMenuSeparator />
         <DropdownMenuGroup>
           <DropdownMenuItem>
-            <Link href="/dashboard" className="flex flexr-row">
+            <Link href="/" className="flex flexr-row">
               <BarChartBig className="w-4 h-4 mr-2" />
-              <span>Dashboard</span>
+              <span>Home</span>
             </Link>
           </DropdownMenuItem>
           <DropdownMenuItem>
+            <Link href="/dashboard" className="flex flexr-row">
+              <User className="w-4 h-4 mr-2" />
+              <span>Dashboard</span>
+            </Link>
+          </DropdownMenuItem>
+          {/* <DropdownMenuItem>
             <User className="w-4 h-4 mr-2" />
             <span>Profile</span>
-          </DropdownMenuItem>
+          </DropdownMenuItem> */}
           <DropdownMenuItem>
             <Link href="/quizz/new" className="flex flexr-row">
               <Plus className="w-4 h-4 mr-2" />
@@ -95,11 +101,15 @@ import {
         <DropdownMenuSeparator />
         <DropdownMenuItem>
           <Github className="w-4 h-4 mr-2" />
+          <Link href="https://github.com/SakshiDangi" className="flex flexr-row">
           <span>GitHub</span>
+          </Link>
         </DropdownMenuItem>
         <DropdownMenuItem>
           <LifeBuoy className="w-4 h-4 mr-2" />
+          <Link href="https://github.com/SakshiDangi/cryptaedu" className="flex flexr-row">
           <span>Support</span>
+          </Link>
         </DropdownMenuItem>
       </DropdownMenuContent>
     )

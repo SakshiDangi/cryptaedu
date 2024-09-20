@@ -24,9 +24,9 @@ const Header = async () => {
 
   return (
     <header>
-      <nav className="px-4 py-2.5">
+      <nav className="px-4 pt-2.5">
         <div className="flex flex-wrap items-center justify-between max-w-screen-xl mx-auto">
-          <h1 className="text-3xl font-bold">CyberEdu Quizz AI</h1>
+          <h1 className="text-3xl font-bold text-purple-500">CyberEdu</h1>
           <div>
         {
           session?.user ? (
@@ -51,7 +51,7 @@ const Header = async () => {
               <SignOut />
             </div>
           ) : (
-                  <Link href="api/auth/signin"><Button variant="link" className="border rounded-xl">Sign In</Button></Link>
+                  <Link href="api/auth/signin"><Button variant="link" className="font-bold text-orange-600 border rounded-xl">Sign In</Button></Link>
           )
             }
           </div>
