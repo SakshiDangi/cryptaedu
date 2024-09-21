@@ -14,6 +14,7 @@ import {
     UserPlus,
     Users,
     BarChartBig,
+    Video,
   } from "lucide-react"
   
   import { Button } from "@/components/ui/button"
@@ -51,10 +52,12 @@ import {
               <span>Dashboard</span>
             </Link>
           </DropdownMenuItem>
-          {/* <DropdownMenuItem>
-            <User className="w-4 h-4 mr-2" />
-            <span>Profile</span>
-          </DropdownMenuItem> */}
+          <DropdownMenuItem>
+          <Link href="/video" className="flex flexr-row">
+            <Video className="w-4 h-4 mr-2" />
+            <span>Cybersecurity Videos</span>
+            </Link>
+          </DropdownMenuItem>
           <DropdownMenuItem>
             <Link href="/quizz/new" className="flex flexr-row">
               <Plus className="w-4 h-4 mr-2" />
