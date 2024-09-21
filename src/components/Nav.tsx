@@ -56,6 +56,13 @@ export default function Nav() {
   return (
     <NavigationMenu>
       <NavigationMenuList>
+      <NavigationMenuItem>
+          <Link href="/quizz" legacyBehavior passHref>
+            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+              Quiz
+            </NavigationMenuLink>
+          </Link>
+        </NavigationMenuItem>
         <NavigationMenuItem>
           <NavigationMenuTrigger>Cyber Security</NavigationMenuTrigger>
           <NavigationMenuContent>
@@ -111,13 +118,6 @@ export default function Nav() {
           <Link href="/video" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               Videos
-            </NavigationMenuLink>
-          </Link>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <Link href="/quizz" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Quiz
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
